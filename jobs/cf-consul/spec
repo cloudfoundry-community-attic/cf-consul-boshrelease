@@ -1,0 +1,13 @@
+---
+name: cf-consul
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/cf_consul_ctl: bin/cf_consul_ctl
+  config/cf_consul.conf.erb: config/cf_consul.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  cf_consul.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
