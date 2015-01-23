@@ -1,0 +1,13 @@
+---
+name: nfs-mounter-consul
+packages: []
+templates:
+  consul/nfs-mounter-service.json.erb: consul/nfs-mounter-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "nfs-mounter"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["nfs-mounter"]

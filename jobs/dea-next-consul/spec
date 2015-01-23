@@ -1,0 +1,13 @@
+---
+name: dea-next-consul
+packages: []
+templates:
+  consul/dea-next-service.json.erb: consul/dea-next-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "nats"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["nats"]

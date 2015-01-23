@@ -1,0 +1,11 @@
+---
+name: postgres-consul
+packages: []
+templates:
+  consul/postgres-service.json.erb: consul/postgres-service.json
+properties:
+
+  databases.port:
+    description: "The database port"
+  databases.address:
+    description: "The database address"

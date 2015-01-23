@@ -1,0 +1,15 @@
+---
+name: uaa-consul
+packages: []
+templates:
+  consul/uaa-status.sh.erb: consul/uaa-status.sh
+  consul/uaa-service.json.erb: consul/uaa-service.json
+properties:
+
+  domain:
+    description: The domain name for this CloudFoundry deploy
+
+  uaa.no_ssl:
+    description: when true, uaa uses http, otherwise it uses https
+  uaa.url:
+    description:

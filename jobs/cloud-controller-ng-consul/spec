@@ -1,0 +1,13 @@
+---
+name: cloud-controller-ng-consul
+packages: []
+templates:
+  consul/cloud-controller-ng-service.json.erb: consul/cloud-controller-ng-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "nats"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["nats"]

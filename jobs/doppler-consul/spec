@@ -1,0 +1,13 @@
+---
+name: doppler-consul
+packages: []
+templates:
+  consul/doppler-service.json.erb: consul/doppler-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "doppler"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["doppler"]

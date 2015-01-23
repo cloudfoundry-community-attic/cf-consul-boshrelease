@@ -1,0 +1,13 @@
+---
+name: haproxy-consul
+packages: []
+templates:
+  consul/haproxy-service.json.erb: consul/haproxy-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "haproxy"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["haproxy"]

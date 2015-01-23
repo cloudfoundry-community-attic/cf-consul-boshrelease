@@ -1,0 +1,12 @@
+{
+  "service": {
+    "name": "uaa",
+    "tags": ["uaa"],
+    "check": {
+      "id": "uaa port check",
+      "name": "uaa port check",
+      "script": "/var/vcap/jobs/uaa-consul/consul/uaa-status.sh",
+      "interval": "30s"
+    }
+  }
+}

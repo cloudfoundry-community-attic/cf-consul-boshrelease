@@ -1,0 +1,13 @@
+---
+name: loggregator-trafficcontroller-consul
+packages: []
+templates:
+  consul/loggregator-trafficcontroller-service.json.erb: consul/loggregator-trafficcontroller-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "loggregator-trafficcontroller"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["loggregator-trafficcontroller"]

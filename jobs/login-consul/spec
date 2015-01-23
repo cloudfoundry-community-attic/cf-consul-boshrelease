@@ -1,0 +1,13 @@
+---
+name: login-consul
+packages: []
+templates:
+  consul/login-service.json.erb: consul/login-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "login"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["login"]

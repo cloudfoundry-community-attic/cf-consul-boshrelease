@@ -1,0 +1,13 @@
+{
+  "service": {
+    "name": "postgres",
+    "tags": ["postgres"],
+    "port": <%= p("databases.port") %>,
+    "check": {
+      "id": "postgres-check",
+      "name": "postgres check",
+      "script": "nc -v -z -w 3 <%= p("databases.address") %> <%= p("databases.port") %> || exit 2",
+      "interval": "10s"
+    }
+  }
+}

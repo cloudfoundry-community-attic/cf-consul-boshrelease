@@ -1,0 +1,13 @@
+---
+name: debian-nfs-server-consul
+packages: []
+templates:
+  consul/debian-nfs-server-service.json.erb: consul/debian-nfs-server-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "debian-nfs-server"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["debian-nfs-server"]

@@ -1,0 +1,11 @@
+#!/bin/bash
+<% scheme = p("uaa.no_ssl") ? "http" : "https"
+domain = p("domain") %>
+
+if curl -k -s -w %{http_code} <%= p("uaa.url", "#{scheme}://uaa.#{domain}") %> | grep -q 302
+then
+  echo "UAA is running"
+else
+  echo "UAA is not running"
+  exit 2
+fi

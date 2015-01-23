@@ -1,0 +1,13 @@
+---
+name: etcd-consul
+packages: []
+templates:
+  consul/etcd-service.json.erb: consul/etcd-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "etcd"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["etcd"]

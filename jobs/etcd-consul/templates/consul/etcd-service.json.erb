@@ -1,0 +1,13 @@
+{
+  "service": {
+    "name": "etcd",
+    "tags": ["etcd"],
+    "port": 4001,
+    "check": {
+      "id": "etcd-check",
+      "name": "etcd check",
+      "script": "nc -v -z -w 3 <%= spec.networks.send(properties.network).ip %> 4001 || exit 2",
+      "interval": "10s"
+    }
+  }
+}

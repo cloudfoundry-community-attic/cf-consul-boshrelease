@@ -1,0 +1,13 @@
+---
+name: gorouter-consul
+packages: []
+templates:
+  consul/gorouter-service.json.erb: consul/gorouter-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "gorouter"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["gorouter"]

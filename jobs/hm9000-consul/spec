@@ -1,0 +1,13 @@
+---
+name: hm9000-consul
+packages: []
+templates:
+  consul/hm9000-service.json.erb: consul/hm9000-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "hm9000"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["hm9000"]

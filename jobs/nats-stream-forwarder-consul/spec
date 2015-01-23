@@ -1,0 +1,13 @@
+---
+name: nats-stream-forwarder-consul
+packages: []
+templates:
+  consul/nats-stream-forwarder-service.json.erb: consul/nats-stream-forwarder-service.json
+properties:
+
+  consul.service.name:
+    description: Name for advertising/discovering this service over consul
+    default: "nats-stream-forwarder"
+  consul.service.tags:
+    description: Array of tags to include in consul advertisement
+    default: ["nats-stream-forwarder"]
