@@ -3,6 +3,7 @@ name: cloud-controller-clock-consul
 packages: []
 templates:
   consul/cloud-controller-clock-service.json.erb: consul/cloud-controller-clock-service.json
+  consul/cloud-controller-clock-check.sh: consul/cloud-controller-clock-check.sh
 properties:
 
   consul.service.name:

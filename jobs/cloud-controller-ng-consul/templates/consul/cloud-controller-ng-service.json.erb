@@ -1,6 +1,13 @@
 {
   "service": {
     "name": "cloud-controller-ng",
-    "tags": ["cloud-controller-ng"]
+    "tags": ["cloud-controller-ng"],
+    "port": <%= p("cc.external_port") %>,
+    "check": {
+      "id": "cloud controller ng check",
+      "name": "cloud controller ng check",
+      "script": "/var/vcap/jobs/cloud-controller-ng-consul/consul/cloud-controller-ng-check.sh",
+      "interval": "10s"
+    }
   }
 }
