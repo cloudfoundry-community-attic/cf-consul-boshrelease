@@ -3,6 +3,7 @@ name: dea-logging-agent-consul
 packages: []
 templates:
   consul/dea-logging-agent-service.json.erb: consul/dea-logging-agent-service.json
+  consul/dea-logging-agent-check.sh: consul/dea-logging-agent-check.sh
 properties:
 
   consul.service.name:

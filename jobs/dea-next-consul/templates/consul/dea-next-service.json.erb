@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "dea-next",
-    "tags": ["dea-next"]
+    "tags": ["dea-next"],
+    "check": {
+      "id": "dea check",
+      "name": "dea check",
+      "script": "/var/vcap/jobs/dea-next-consul/consul/dea-next-check.sh",
+      "interval": "10s"
+    }
   }
 }
