@@ -3,6 +3,7 @@ name: nats-stream-forwarder-consul
 packages: []
 templates:
   consul/nats-stream-forwarder-service.json.erb: consul/nats-stream-forwarder-service.json
+  bin/nats-stream-forwarder-check.sh: bin/nats-stream-forwarder-check.sh
 properties:
 
   consul.service.name:

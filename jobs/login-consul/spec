@@ -3,6 +3,7 @@ name: login-consul
 packages: []
 templates:
   consul/login-service.json.erb: consul/login-service.json
+  bin/login-check.sh: bin/login-check.sh
 properties:
 
   consul.service.name:

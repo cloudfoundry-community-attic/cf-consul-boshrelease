@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "nats-stream-forwarder",
-    "tags": ["nats-stream-forwarder"]
+    "tags": ["nats-stream-forwarder"],
+    "check": {
+      "id": "nats-stream-forwarder check",
+      "name": "nats-stream-forwarder check",
+      "script": "/var/vcap/jobs/nats-stream-forwarder-consul/bin/nats-stream-forwarder-check.sh",
+      "interval": "10s"
+    }
   }
 }
