@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "haproxy",
-    "tags": ["haproxy"]
+    "tags": ["haproxy"],
+    "check": {
+      "id": "haproxy check",
+      "name": "haproxy check",
+      "script": "/var/vcap/jobs/haproxy-consul/bin/haproxy-check.sh",
+      "interval": "10s"
+    }
   }
 }

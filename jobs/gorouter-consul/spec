@@ -3,6 +3,7 @@ name: gorouter-consul
 packages: []
 templates:
   consul/gorouter-service.json.erb: consul/gorouter-service.json
+  bin/gorouter-check.sh: bin/gorouter-check.sh
 properties:
 
   consul.service.name:
