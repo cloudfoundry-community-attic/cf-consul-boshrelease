@@ -3,6 +3,7 @@ name: loggregator-trafficcontroller-consul
 packages: []
 templates:
   consul/loggregator-trafficcontroller-service.json.erb: consul/loggregator-trafficcontroller-service.json
+  bin/loggregator-trafficcontroller-check.sh: bin/loggregator-trafficcontroller-check.sh
 properties:
 
   consul.service.name:

@@ -3,6 +3,7 @@ name: doppler-consul
 packages: []
 templates:
   consul/doppler-service.json.erb: consul/doppler-service.json
+  bin/doppler-check.sh: bin/doppler-check.sh
 properties:
 
   consul.service.name:
