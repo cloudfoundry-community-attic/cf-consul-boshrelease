@@ -1,6 +1,13 @@
 {
   "service": {
     "name": "gorouter",
-    "tags": ["gorouter"]
+    "tags": ["gorouter"],
+    "port": <%= p("router.port") %>,
+    "check": {
+      "id": "gorouter check",
+      "name": "gorouter check",
+      "script": "/var/vcap/jobs/gorouter-consul/bin/gorouter-check.sh",
+      "interval": "10s"
+    }
   }
 }

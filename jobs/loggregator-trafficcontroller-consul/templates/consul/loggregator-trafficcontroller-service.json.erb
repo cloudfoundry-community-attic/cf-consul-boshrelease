@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "loggregator-trafficcontroller",
-    "tags": ["loggregator-trafficcontroller"]
+    "tags": ["loggregator-trafficcontroller"],
+    "check": {
+      "id": "loggregator trafficcontroller check",
+      "name": "loggregator trafficcontroller check",
+      "script": "/var/vcap/jobs/loggregator-trafficcontroller-consul/bin/loggregator-trafficcontroller-check.sh",
+      "interval": "10s"
+    }
   }
 }

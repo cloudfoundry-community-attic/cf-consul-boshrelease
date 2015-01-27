@@ -3,6 +3,7 @@ name: haproxy-consul
 packages: []
 templates:
   consul/haproxy-service.json.erb: consul/haproxy-service.json
+  bin/haproxy-check.sh: bin/haproxy-check.sh
 properties:
 
   consul.service.name:

@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "doppler",
-    "tags": ["doppler"]
+    "tags": ["doppler"],
+    "check": {
+      "id": "doppler check",
+      "name": "doppler check",
+      "script": "/var/vcap/jobs/doppler-consul/bin/doppler-check.sh",
+      "interval": "10s"
+    }
   }
 }

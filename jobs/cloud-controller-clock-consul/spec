@@ -3,11 +3,12 @@ name: cloud-controller-clock-consul
 packages: []
 templates:
   consul/cloud-controller-clock-service.json.erb: consul/cloud-controller-clock-service.json
+  bin/cloud-controller-clock-check.sh: bin/cloud-controller-clock-check.sh
 properties:
 
   consul.service.name:
     description: Name for advertising/discovering this service over consul
-    default: "nats"
+    default: "cloud-controller-clock"
   consul.service.tags:
     description: Array of tags to include in consul advertisement
-    default: ["nats"]
+    default: ["cloud-controller-clock"]

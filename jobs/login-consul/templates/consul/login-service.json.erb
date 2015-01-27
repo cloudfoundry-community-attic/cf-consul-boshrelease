@@ -1,6 +1,14 @@
 {
   "service": {
     "name": "login",
-    "tags": ["login"]
+    "tags": ["login"],
+    "port": <%= p("login.port") %>,
+    "check": {
+      "id": "login check",
+      "name": "login check",
+      "script": "/var/vcap/jobs/login-consul/bin/login-check.sh",
+      "interval": "10s"
+    }
+
   }
 }

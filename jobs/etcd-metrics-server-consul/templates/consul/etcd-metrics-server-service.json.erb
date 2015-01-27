@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "etcd-metrics-server",
-    "tags": ["etcd-metrics-server"]
+    "tags": ["etcd-metrics-server"],
+    "check": {
+      "id": "etcd metric server check",
+      "name": "etcd metric server check",
+      "script": "/var/vcap/jobs/etcd-metrics-server-consul/bin/etcd-metrics-server-check.sh",
+      "interval": "10s"
+    }
   }
 }

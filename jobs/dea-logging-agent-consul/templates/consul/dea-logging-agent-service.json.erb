@@ -1,6 +1,12 @@
 {
   "service": {
     "name": "dea-logging-agent",
-    "tags": ["dea-logging-agent"]
+    "tags": ["dea-logging-agent"],
+    "check": {
+      "id": "dea logging agent check",
+      "name": "dea logging agent check",
+      "script": "/var/vcap/jobs/dea-logging-agent-consul/bin/dea-logging-agent-check.sh",
+      "interval": "10s"
+    }
   }
 }
