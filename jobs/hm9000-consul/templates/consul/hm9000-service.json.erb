@@ -1,6 +1,55 @@
 {
   "service": {
     "name": "hm9000",
-    "tags": ["hm9000"]
+    "tags": ["hm9000"],
+    "checks": [{
+      "id": "hm9000 analyzer check",
+      "name": "hm9000 analyzer check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-analyzer-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 api server check",
+      "name": "hm9000 api server check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-api-server-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 evacuator check",
+      "name": "hm9000 evacuator check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-evacuator-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 fetcher check",
+      "name": "hm9000 fetcher check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-fetcher-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 listener check",
+      "name": "hm9000-listener check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-listener-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 metrics server check",
+      "name": "hm9000-metrics-server check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-metrics-server-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000 sender check",
+      "name": "hm9000 sender check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-sender-check.sh",
+      "interval": "10s"
+    },
+    {
+      "id": "hm9000-shredder check",
+      "name": "hm9000-shredder check",
+      "script": "/var/vcap/jobs/hm9000-consul/bin/hm9000-shredder-check.sh",
+      "interval": "10s"
+    }
+    ]
   }
 }

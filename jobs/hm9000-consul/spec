@@ -3,6 +3,14 @@ name: hm9000-consul
 packages: []
 templates:
   consul/hm9000-service.json.erb: consul/hm9000-service.json
+  bin/hm9000-analyzer-check.sh: bin/hm9000-analyzer-check.sh
+  bin/hm9000-api-server-check.sh: bin/hm9000-api-server-check.sh
+  bin/hm9000-evacuator-check.sh: bin/hm9000-evacuator-check.sh
+  bin/hm9000-fetcher-check.sh: bin/hm9000-fetcher-check.sh
+  bin/hm9000-listener-check.sh: bin/hm9000-listener-check.sh
+  bin/hm9000-metrics-server-check.sh: bin/hm9000-metrics-server-check.sh
+  bin/hm9000-sender-check.sh: bin/hm9000-sender-check.sh
+  bin/hm9000-shredder-check.sh: bin/hm9000-shredder-check.sh
 properties:
 
   consul.service.name:
