@@ -2,7 +2,7 @@
 name: uaa-consul
 packages: []
 templates:
-  consul/uaa-status.sh.erb: consul/uaa-status.sh
+  bin/uaa-status.sh.erb: bin/uaa-status.sh
   consul/uaa-service.json.erb: consul/uaa-service.json
 properties:
 

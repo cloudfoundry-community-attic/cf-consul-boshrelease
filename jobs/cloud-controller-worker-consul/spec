@@ -3,7 +3,7 @@ name: cloud-controller-worker-consul
 packages: []
 templates:
   consul/cloud-controller-worker-service.json.erb: consul/cloud-controller-worker-service.json
-  consul/cloud-controller-worker-check.sh: consul/cloud-controller-worker-check.sh
+  bin/cloud-controller-worker-check.sh: bin/cloud-controller-worker-check.sh
 properties:
 
   consul.service.name:

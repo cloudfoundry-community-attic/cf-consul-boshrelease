@@ -3,7 +3,7 @@ name: cloud-controller-ng-consul
 packages: []
 templates:
   consul/cloud-controller-ng-service.json.erb: consul/cloud-controller-ng-service.json
-  consul/cloud-controller-ng-check.sh: consul/cloud-controller-ng-check.sh
+  bin/cloud-controller-ng-check.sh: bin/cloud-controller-ng-check.sh
 properties:
 
   consul.service.name:

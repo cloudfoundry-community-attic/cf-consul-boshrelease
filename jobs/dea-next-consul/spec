@@ -3,7 +3,7 @@ name: dea-next-consul
 packages: []
 templates:
   consul/dea-next-service.json.erb: consul/dea-next-service.json
-  consul/dea-next-check.sh: consul/dea-next-check.sh
+  bin/dea-next-check.sh: bin/dea-next-check.sh
 properties:
 
   consul.service.name:
