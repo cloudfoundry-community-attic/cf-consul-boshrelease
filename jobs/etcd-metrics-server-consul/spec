@@ -3,6 +3,7 @@ name: etcd-metrics-server-consul
 packages: []
 templates:
   consul/etcd-metrics-server-service.json.erb: consul/etcd-metrics-server-service.json
+  bin/etcd-metrics-server-check.sh: bin/etcd-metrics-server-check.sh
 properties:
 
   consul.service.name:
