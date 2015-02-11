@@ -6,7 +6,7 @@
     "check": {
       "id": "nats-check",
       "name": "nats check",
-      "script": "nc -v -z -w 3 <%= spec.networks.send(properties.network).ip %> <%= p("nats.port") %>",
+      "script": "nc -v -z -w 3 <%= spec.networks.send(properties.networks.apps).ip %> <%= p("nats.port") %>",
       "interval": "10s"
     }
   }
